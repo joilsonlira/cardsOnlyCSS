@@ -68,6 +68,9 @@
 .cardBack header{
     height: auto;
 }
+.content{
+    
+}
 .cardBack footer{
     font-weight: bolder;
     font-size: 1vh;

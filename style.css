@@ -57,10 +57,13 @@ hr{
   .cardFront img{
     width: 100%;
   }
+  .cardFront header img{
+    width: 100%;
+  }
   .cardFront footer{
     position: relative;
     height: 4vh;
-    padding: 10vmin 1vmin 1vmin 1vmin;
+    padding: 1vmin 1vmin 1vmin 1vmin;
     align-items: center;
     display: flex;
   }

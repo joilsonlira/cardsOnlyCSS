@@ -49,6 +49,7 @@ hr{
     transition: transform 0.8s;
     transform-style: preserve-3d;
     border: solid 0.5vmax yellow;
+    border-radius: 2vmin;
     background-image: linear-gradient(#ffff64, white, #ffff64);
   }
   
@@ -59,7 +60,7 @@ hr{
   .cardFront footer{
     position: relative;
     height: 4vh;
-    padding: 1vh;
+    padding: 10vmin 1vmin 1vmin 1vmin;
     align-items: center;
     display: flex;
   }

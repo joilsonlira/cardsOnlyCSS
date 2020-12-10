@@ -1,0 +1,103 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+body{
+  background-color: gray;
+}
+.flip-container {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    perspective: 1000px; 
+
+  }
+  
+  .flipper {
+    position: relative;
+    width: 20vmax;
+    min-height: 33vmax;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border: solid 0.5vmax yellow;
+    background-image: linear-gradient(#ffff64, white, #ffff64);
+  }
+  
+  
+  .cardFront img{
+    width: 100%;
+  }
+  .cardFront footer{
+    position: relative;
+    height: 4vh;
+    padding: 1vh;
+    align-items: center;
+    display: flex;
+  }
+  .cardFront h1{
+    font-size: 3vmin;
+    font-weight: lighter;
+    margin-right: 2vw;
+  }
+  .cardFront p{
+    font-weight: normal;
+    font-size: 4vmin;
+  }
+  .cardBack h1{
+    font-weight: normal;
+    font-size: 3vw;
+    text-align: center;
+  }
+  
+  .cardBack h2{
+    font-weight: normal;
+    font-size: 2.1vmin;
+  }
+  .cardBack .statusBase p{
+    font-weight: bolder;
+    font-size: 3vmin;
+    text-align: right;
+    background-image: linear-gradient(to right, #00000017 30%, #ffffff);
+  }
+
+  .cardBack {
+    transform: rotateY(180deg);
+  }
+  
+  .cardBack header{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    margin: 0.5vw;
+    
+  }
+  .cardBack header p{
+    font-size: 2.5vmin;
+    font-weight: bolder;
+    margin: 0% 0% 0% 5%;
+    padding: 1vmin;
+    border: solid 2px yellow;
+    border-radius: 5px;
+    color: #222222;
+    background-color: #d4d445;
+  }
+  .cardBack img{
+    width: 10vmin;
+    background-image: linear-gradient(yellow, white);
+    border-radius: 50%;
+  }  
+  #switch{
+    display: none;
+  }
+  
+  #switch:checked ~ .flip-container .flipper {
+    transform: rotateY(180deg);
+  }
+  .cardFront, .cardBack, .statusBase {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+
+  }

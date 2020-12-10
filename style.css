@@ -7,10 +7,37 @@
 body{
   background-color: gray;
 }
+
+.principal header h1{
+  font-weight: normal;
+  font-size: 3vmin;
+}
+.principal header{
+  display: flex;
+  align-items: center;
+  padding: 1vmin;
+
+}
+.principal header img{
+  width: 8vmin;
+}
+
+hr{
+  margin: 1%;
+}
+/* Estilo da pagina */
+#mainContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+
+/* Estilo do card */
 .flip-container {
     display: flex;
-    margin: 0px;
-    padding: 0px;
+    padding-left: 39%; /*estou usando este parametro para tentar centralizar*/
     perspective: 1000px; 
 
   }
@@ -59,7 +86,7 @@ body{
     font-weight: bolder;
     font-size: 3vmin;
     text-align: right;
-    background-image: linear-gradient(to right, #00000017 30%, #ffffff);
+    background-image: linear-gradient(to right, #00000017 30%, #ffffffd7);
   }
 
   .cardBack {

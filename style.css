@@ -59,7 +59,7 @@ body{
     font-weight: bolder;
     font-size: 3vmin;
     text-align: right;
-    background-image: linear-gradient(to right, #ffffff00 30%, #c4c4c4);
+    background-image: linear-gradient(to right, #00000017 30%, #ffffff);
   }
 
   .cardBack {

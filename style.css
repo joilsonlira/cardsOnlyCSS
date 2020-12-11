@@ -4,6 +4,44 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
 }
+:root{
+  --tp-fogo: #e70000;
+  --bg-fogo: #e21515;
+  --tp-agua: #0044ff;
+  --bg-agua: #1a51e7;
+  --tp-planta: #24d314;
+  --bg-planta: #33b127;
+  --tp-eletrico: yellow;
+  --bg-eletrico: #ffff64;
+  --tp-voador: #00b7ff;
+  --bg-voador: #1ba6dd;
+  --tp-normal: #c9c9c9;
+  --bg-normal: #eeeeee;
+  --tp-veneno: #a513df;
+  --bg-veneno: #8e2fb4;
+  --tp-dark: #141414;
+  --bg-dark: #333333;
+  --tp-pisiquico: #7936f7;
+  --bg-pisiquico: #9058f8;
+  --tp-fada: #d11fe9;
+  --bg-fada: #f858f0;
+  --tp-pedra: #312e44;
+  --bg-pedra: #464357;
+  --tp-terra: #9c5f0f;
+  --bg-terra: #bb7f31;
+  --tp-lutador: #3d1c00;
+  --bg-lutador: #3b2b1c;
+  --tp-metal: #b1b1b1;
+  --bg-metal: #919191;
+  --tp-fantasma: #31008d;
+  --bg-fantasma: #341077;
+}
+:root{
+  --cor-estilo: var(--tp-planta);
+  --bg-tipoPrimario: var(--tp-planta);
+  --bg-tipoSecundario: var(--bg-veneno);
+}
+
 body{
   background-color: gray;
 }
@@ -48,9 +86,9 @@ hr{
     min-height: 33vmax;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    border: solid 0.5vmax yellow;
+    border: solid 0.5vmax var(--cor-estilo);
     border-radius: 2vmin;
-    background-image: linear-gradient(#ffff64, white, #ffff64);
+    background-image: linear-gradient(var(--bg-tipoPrimario), var(--bg-tipoSecundario));
   }
   
   
@@ -109,14 +147,21 @@ hr{
     font-weight: bolder;
     margin: 0% 0% 0% 5%;
     padding: 1vmin;
-    border: solid 2px yellow;
     border-radius: 5px;
     color: #222222;
-    background-color: #d4d445;
+    
+  }
+  .cardBack header .tipoPrimario{
+    border: solid 2px var(--cor-estilo);
+    background-color: var(--bg-tipoPrimario);
+  }
+  .cardBack header .tipoSecundario{
+    border: solid 2px var(--cor-estilo);
+    background-color: var(--bg-tipoSecundario);
   }
   .cardBack img{
     width: 10vmin;
-    background-image: linear-gradient(yellow, white);
+    background-image: linear-gradient(var(--bg-tipoPrimario), var(--bg-tipoSecundario));
     border-radius: 50%;
   }  
   #switch{

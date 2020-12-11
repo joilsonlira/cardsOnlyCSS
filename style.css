@@ -75,8 +75,8 @@ hr{
 /* Estilo do card */
 .flip-container {
     display: flex;
-    padding-left: 39%; /*estou usando este parametro para tentar centralizar*/
-    perspective: 1000px; 
+    margin-left: 39%;
+    perspective: 1000px;
 
   }
   
@@ -88,7 +88,7 @@ hr{
     transform-style: preserve-3d;
     border: solid 0.5vmax var(--cor-estilo);
     border-radius: 2vmin;
-    background-image: linear-gradient(var(--bg-tipoPrimario), var(--bg-tipoSecundario));
+    background-image: linear-gradient(var(--bg-tipoPrimario), white, var(--bg-tipoSecundario));
   }
   
   
@@ -161,7 +161,7 @@ hr{
   }
   .cardBack img{
     width: 10vmin;
-    background-image: linear-gradient(var(--bg-tipoPrimario), var(--bg-tipoSecundario));
+    background-image: linear-gradient(var(--bg-tipoPrimario), white, var(--bg-tipoSecundario));
     border-radius: 50%;
   }  
   #switch{

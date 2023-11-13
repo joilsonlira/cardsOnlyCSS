@@ -60,9 +60,6 @@ body{
   width: 8vmin;
 }
 
-hr{
-  margin: 1%;
-}
 /* Estilo da pagina */
 #Card{
   display: flex;

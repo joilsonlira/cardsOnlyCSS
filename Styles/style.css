@@ -45,9 +45,7 @@
 body{
   background-color: white;
 }
-hr{
-  display: none;
-}
+
 .principal header h1{
   font-weight: normal;
   font-size: 3vmin;
@@ -66,7 +64,7 @@ hr{
   margin: 1%;
 }
 /* Estilo da pagina */
-#mainContainer{
+#Card{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -75,14 +73,7 @@ hr{
 
 
 /* Estilo do card */
-.flip-container {
-    display: flex;
-    margin-left: 39%;
-    perspective: 1000px;
-
-  }
-  
-  .flipper {
+  .Card_container {
     position: relative;
     width: 20vmax;
     min-height: 33vmax;

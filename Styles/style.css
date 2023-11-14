@@ -121,9 +121,9 @@ body{
     background-image: linear-gradient(to right, #00000017 30%, #ffffffd7);
   }
 
-  .cardBack {
+  /* .cardBack {
     transform: rotateY(180deg);
-  }
+  } */
   
   .cardBack header{
     display: inline-flex;
@@ -158,12 +158,12 @@ body{
     display: none;
   }
   
-  #switch:checked ~ .flip-container .flipper {
+  #switch:checked ~ .Card_container {
     transform: rotateY(180deg);
   }
   .cardFront, .cardBack, .statusBase {
-    position: absolute;
+    position: relative;
     width: 100%;
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
 
   }

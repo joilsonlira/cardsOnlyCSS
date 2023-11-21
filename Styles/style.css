@@ -48,40 +48,57 @@ body{
 
 .principal header h1{
   font-weight: normal;
-  font-size: 3vmin;
+  font-size: 3vh;
 }
 .principal header{
   display: flex;
   align-items: center;
-  padding: 1vmin;
+  padding: 1vh;
 
 }
 .principal header img{
-  width: 8vmin;
+  width: 8vh;
 }
 
 /* Estilo da pagina */
 #Card{
-  display: flex;
   flex-wrap: wrap;
   width: 100%;
-
 }
 
+  #Card, .Card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 /* Estilo do card */
   .Card_container {
-    position: relative;
-    width: 20vmax;
-    min-height: 33vmax;
+    /* position: relative; */
+    width: 20vw;
+    min-height: 33vw;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    border: solid 0.5vmax var(--cor-estilo);
-    border-radius: 2vmin;
-    background-image: linear-gradient(var(--bg-tipoPrimario), white, var(--bg-tipoSecundario));
+    /* border: solid 0.5vw var(--cor-estilo);
+    border-radius: 2vw;
+    background-image: linear-gradient(var(--bg-tipoPrimario), white, var(--bg-tipoSecundario)); */
   }
   
-  
+  .cardBack{
+    margin-left: 50px;
+  }
+
+  .cardBack, .cardFront{
+    border: solid 0.5vw var(--cor-estilo);
+    border-radius: 2vw;
+    background-image: linear-gradient(var(--bg-tipoPrimario), white, var(--bg-tipoSecundario));
+  }
+
+  .cardBack, .cardFront, .Card_container{
+    min-width: 20vw;
+    min-height: 33vw;
+  }
+
   .cardFront img{
     width: 100%;
   }
@@ -89,20 +106,20 @@ body{
     width: 100%;
   }
   .cardFront footer{
-    position: relative;
+    /* position: relative; */
     height: 4vh;
-    padding: 1vmin 1vmin 1vmin 1vmin;
+    padding: 1vh 1vh 1vh 1vh;
     align-items: center;
     display: flex;
   }
   .cardFront h1{
-    font-size: 3vmin;
+    font-size: 3vh;
     font-weight: lighter;
     margin-right: 2vw;
   }
   .cardFront p{
     font-weight: normal;
-    font-size: 4vmin;
+    font-size: 3.8vw;
   }
   .cardBack h1{
     font-weight: normal;
@@ -112,13 +129,14 @@ body{
   
   .cardBack h2{
     font-weight: normal;
-    font-size: 2.1vmin;
+    font-size: 2.1vh;
   }
-  .cardBack .statusBase p{
+  .cardBack .statusBase, .cardBack .statusBase h2, .cardBack .statusBase table{
     font-weight: bolder;
-    font-size: 3vmin;
-    text-align: right;
-    background-image: linear-gradient(to right, #00000017 30%, #ffffffd7);
+    font-size: 3vh;
+    text-align: left;
+    padding-left: 15px;
+    /* background-image: linear-gradient(to right, #00000017 30%, #ffffffd7); */
   }
 
   /* .cardBack {
@@ -126,17 +144,17 @@ body{
   } */
   
   .cardBack header{
-    display: inline-flex;
+    display: flex;
     width: 100%;
     align-items: center;
     margin: 0.5vw;
     
   }
   .cardBack header p{
-    font-size: 2.5vmin;
+    font-size: 2.5vh;
     font-weight: bolder;
     margin: 0% 0% 0% 5%;
-    padding: 1vmin;
+    padding: 1vh;
     border-radius: 5px;
     color: #222222;
     
@@ -150,7 +168,7 @@ body{
     background-color: var(--bg-tipoSecundario);
   }
   .cardBack img{
-    width: 10vmin;
+    width: 10vh;
     background-image: linear-gradient(var(--bg-tipoPrimario), white, var(--bg-tipoSecundario));
     border-radius: 50%;
   }  
@@ -162,7 +180,7 @@ body{
     transform: rotateY(180deg);
   }
   .cardFront, .cardBack, .statusBase {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     /* backface-visibility: hidden; */
 

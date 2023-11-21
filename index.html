@@ -3,68 +3,89 @@
 
 <head>
     <title>Pagina unica</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/style.css">
 </head>
 
 <body>
-    <div class="principal">
+    <main class="principal">
         <header>
-            <img src="https://www.shareicon.net/data/2016/08/01/640615_game_512x512.png" alt="" class="logo" />
+            <figure>
+                <img class="logo" src="https://www.shareicon.net/data/2016/08/01/640615_game_512x512.png" alt="logo" />
+            </figure>
             <h1>Pokemons: Base Estatus</h1>
-
         </header>
-        <hr>
-
-        <div Id="mainContainer">
-
-            <input type="checkbox" id="switch">
-            <label class="flip-container" for="switch">
-                <div class="flipper">
-
-                    <!-- parte da frente do card -->
-                    <div class="cardFront">
-                        <header>
-                            <img src="http://www.vignette2.wikia.nocookie.net/logopedia/images/2/2b/Pokemon_2D_logo.svg/revision/latest/scale-to-width-down/639?cb=20170115063554"
-                                alt="Logo pokemon">
-                        </header>
-                        <img
-                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" />
-                        <footer>
-                            <h1>Nº01</h1>
-                            <p>Bulbasaur</p>
-                        </footer>
-                    </div>
-
-                    <!-- parte da frente do card -->
-                    <div class="cardBack">
-                        <header>
-                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
-                                class="iconePokemon">
-                            <P class="tipoPrimario">Planta</P>
-                            <P class="tipoSecundario">Veneno</P>
-                        </header>
-
-                        <div class="statusBase">
-                            <h1>Base status</h1>
-                            <hr>
-                            <h2>HP: </h2>
-                            <p>45</P>
-                            <h2>Attack: </h2>
-                            <p>49</P>
-                            <h2>Defense: </h2>
-                            <p>49</P>
-                            <h2>Sp.Attack: </h2>
-                            <p>65</P>
-                            <h2>Sp.Defense: </h2>
-                            <p>65</P>
-                            <h2>Speed: </h2>
-                            <p>45</P>
-                        </div>
+        <!-- conteudo geral do card -->
+        <div Id="Card">
+            <div class="Card_container">
+                <!-- parte da frente do card -->
+                <div class="cardFront">
+                    <header>
+                        <figure>
+                            <img src="http://www.vignette2.wikia.nocookie.net/logopedia/images/2/2b/Pokemon_2D_logo.svg/revision/latest/scale-to-width-down/639?cb=20170115063554" alt="Logo pokemon">
+                        </figure>
+                    </header>
+                    <figure>
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="bulbasaur"/>
+                    </figure>
+                    <footer>
+                        <h2>Nº01</h2>
+                        <p>Bulbasaur</p>
+                    </footer>
+                </div>
+                <!-- parte da frente do card -->
+                <div class="cardBack">
+                    <header>
+                        <figure>
+                            <img  class="iconePokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="mini bulbasaur">
+                        </figure>
+                        <P class="tipoPrimario">Planta</P>
+                        <P class="tipoSecundario">Veneno</P>
+                    </header>
+                    <div class="statusBase">
+                        <h2>Base status</h2>
+                        <table>
+                            <tr>
+                                <th>HP:</th>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <th>Attack:</th>
+                                <td>49</td>
+                            </tr>
+                            <tr>
+                                <th>Defense:</th>
+                                <td>49</td>
+                            </tr>
+                            <tr>
+                                <th>Sp.Attack:</th>
+                                <td>65</td>
+                            </tr>
+                            <tr>
+                                <th>Sp.Defense:</th>
+                                <td>65</td>
+                            </tr>
+                            <tr>
+                                <th>Speed:</th>
+                                <td>45</td>
+                            </tr>
+                        </table>
+                        <!-- <h2>HP: </h2>
+                        <p>45</P>
+                        <h2>Attack: </h2>
+                        <p>49</P>
+                        <h2>Defense: </h2>
+                        <p>49</P>
+                        <h2>Sp.Attack: </h2>
+                        <p>65</P>
+                        <h2>Sp.Defense: </h2>
+                        <p>65</P>
+                        <h2>Speed: </h2>
+                        <p>45</P> -->
                     </div>
                 </div>
-            </label>
+            </div>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>

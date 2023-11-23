@@ -107,19 +107,19 @@ body{
   }
   .cardFront footer{
     /* position: relative; */
-    height: 4vh;
+    height: 3vh;
     padding: 1vh 1vh 1vh 1vh;
     align-items: center;
     display: flex;
   }
   .cardFront h1{
-    font-size: 3vh;
+    font-size: 2vh;
     font-weight: lighter;
     margin-right: 2vw;
   }
   .cardFront p{
     font-weight: normal;
-    font-size: 3.8vw;
+    font-size: 3.3vw;
   }
   .cardBack h1{
     font-weight: normal;
@@ -137,6 +137,20 @@ body{
     text-align: left;
     padding-left: 15px;
     /* background-image: linear-gradient(to right, #00000017 30%, #ffffffd7); */
+  }
+
+  .cardBack .statusBase{
+    height: auto;
+    width: auto;
+  }
+
+  .cardBack .statusBase table tr{
+    padding-bottom: 500px;
+  }
+
+  .cardBack .statusBase table tr:hover{
+    transform: scale(1.3);
+    cursor: none;
   }
 
   /* .cardBack {
@@ -179,9 +193,9 @@ body{
   #switch:checked ~ .Card_container {
     transform: rotateY(180deg);
   }
-  .cardFront, .cardBack, .statusBase {
+  .cardFront, .cardBack {
     /* position: relative; */
     width: 100%;
+    height: 100%;
     /* backface-visibility: hidden; */
-
   }

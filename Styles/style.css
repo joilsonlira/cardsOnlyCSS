@@ -102,24 +102,33 @@ body{
   .cardFront img{
     width: 100%;
   }
+
+  .cardFront figure{
+    padding: 35px;
+  }
+
+  .cardFront header figure{
+    padding: 0;
+  }
+
   .cardFront header img{
     width: 100%;
   }
   .cardFront footer{
     /* position: relative; */
     height: 3vh;
-    padding: 1vh 1vh 1vh 1vh;
+    padding: 1vh;
     align-items: center;
     display: flex;
   }
-  .cardFront h1{
+  .cardFront footer h2{
     font-size: 2vh;
     font-weight: lighter;
     margin-right: 2vw;
   }
-  .cardFront p{
+  .cardFront footer p{
     font-weight: normal;
-    font-size: 3.3vw;
+    font-size: 50px;
   }
   .cardBack h1{
     font-weight: normal;
@@ -135,22 +144,31 @@ body{
     font-weight: bolder;
     font-size: 3vh;
     text-align: left;
-    padding-left: 15px;
     /* background-image: linear-gradient(to right, #00000017 30%, #ffffffd7); */
   }
 
-  .cardBack .statusBase{
-    height: auto;
-    width: auto;
+  .cardBack .statusBase h2{
+    padding: 0 20px;
+  }
+
+  .cardBack .statusBase table{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .cardBack .statusBase table tr{
-    padding-bottom: 500px;
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
   }
 
   .cardBack .statusBase table tr:hover{
-    transform: scale(1.3);
-    cursor: none;
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
   /* .cardBack {
@@ -160,9 +178,11 @@ body{
   .cardBack header{
     display: flex;
     width: 100%;
+    height: 20%;
     align-items: center;
-    margin: 0.5vw;
-    
+    justify-content: space-evenly;
+    padding: 0;
+    margin-top: 15px;
   }
   .cardBack header p{
     font-size: 2.5vh;
@@ -170,7 +190,7 @@ body{
     margin: 0% 0% 0% 5%;
     padding: 1vh;
     border-radius: 5px;
-    color: #222222;
+    color: white;
     
   }
   .cardBack header .tipoPrimario{
